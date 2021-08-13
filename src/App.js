@@ -94,13 +94,13 @@ function App () {
     if ((event.key === "Backspace" || event.key === "Delete") && keyIndex >= 0)
       keyIndex -= 2;
 
-    if(keyIndex < 0)
-    keyIndex = 0;
+    if (keyIndex < 0)
+      keyIndex = 0;
 
     console.log(event)
     console.log(keyIndex)
 
-    
+
 
   }
   return (
@@ -113,7 +113,7 @@ function App () {
       <Card style={{ display: "flex", justifyContent: "center" }} >
         <Card.Title style={{ alignSelf: "center" }}>{movieName}</Card.Title>
         <Card.Title style={{ alignSelf: "center" }}>{newMask}</Card.Title>
-        <input type="text" onKeyDown={onKeyPressed}></input>
+        <input type="text" onKeyDown={onKeyPressed} style={{ width: "200px", alignSelf: "center" }}></input>
 
 
         {/* <SearchBar
